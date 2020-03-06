@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>相等运算符</title>
+</head>
+<body>
+
+</body>
+<script>
+	var a = 10;
+	console.log(a == 1);
+	//NaN不和任何值不相等，包括它本身，都是false
+	//可以通过isNaN()这个函数判断一个值是不是NaN
+	var b = NaN;
+	console.log(isNaN(b));  //ture
+	console.log(a=="10");  //类型可以不同，会自动类型转换
+	console.log(a === "10");   //三个等号要求类型也必须相等
+	console.log(10!=5);
+	console.log(10!=10);
+</script>
+</html>

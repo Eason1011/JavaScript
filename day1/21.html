@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>循环语句</title>
+</head>
+<body>
+
+</body>
+<script>
+	//循环语句
+	var a = 1;   //初始化变量
+	while (a<15){    //条件表达式  先判断，再执行，不满足，终止循环
+	    //尽量不要写死循环
+	    document.write(a++ +"<br />");   //a++更新表达式
+	}
+
+
+
+	a = 1;
+	do {   //先执行一次，最少执行一次，在进行判断，满足继续执行，不满足退出
+        document.write(a++ +"<br />");
+    }while (a<=10)
+
+</script>
+</html>

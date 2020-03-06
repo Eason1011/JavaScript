@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>for循环练习</title>
+</head>
+<body>
+
+</body>
+<script>
+	// var sum = 0;
+	// var count = 0;
+	// for (var i = 1;i<=100;i++){
+	//     if (i%7==0){
+	//         // console.log(i);
+	//         sum+=i;
+	//         count++;
+	//     }
+	// }
+	//
+	// console.log(sum);
+	// console.log(count);
+	
+	
+	
+	for (var i = 100; i<1000;i++){
+	    var a = parseInt(i/100) ;
+	    var b = parseInt((i-a*100)/10) ;
+	    var c = parseInt(i%10);
+	    if (a*a*a+b*b*b+c*c*c == i){
+	        console.log(i);
+	    }
+	}  40
+</script>
+</html>

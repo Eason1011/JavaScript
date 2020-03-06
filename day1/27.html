@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>跳转语句</title>
+</head>
+<body>
+
+</body>
+<script>
+	//break用于switch和循环语句，不能用于if语句
+	// for (var i = 0;i<5;i++){
+	//     document.write("外层"+i);
+	//     for (var j = 0;j<10;j++){
+    //         break;    //只终止最近的循环
+    //         document.write("内层循环"+j);
+	//     }
+	// }
+
+
+	// outer:
+    // for (var i = 0;i<5;i++){
+    //     document.write("外层"+i);
+    //     for (var j = 0;j<10;j++){
+    //         break outer;    //终止特定循环
+    //         document.write("内层循环"+j);
+    //     }
+    // }
+
+
+	for (var i =0;i<5;i++){
+	    if (i==2){
+	        continue;   //跳出当次，也是离他最近
+	    }
+	    document.write(i);
+	}
+
+
+	//console.time()  //用于开启一个定时器
+	//console.timeEnd()  //用于结束一个定时器
+
+
+
+
+</script>
+</html>

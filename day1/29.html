@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>对象简介</title>
+</head>
+<body>
+
+</body>
+<script>
+	//基本数据类型是单一的，之间没有关系
+	//这就是对象的优点，属于复合的数据类型，保存多个不同类型的数据
+	//对象分类：1,。内建对象  ES标准中定义好的
+	//2.宿主对象，由JS运行环境提供的，例如DOM BOM console  document
+	//3.自建对象
+
+
+	//创建对象：
+	var obj = new Object();   //new是构造函数，创建了一个对象,此时是空对象
+
+	console.log(typeof obj);
+
+	//向对象中添加属性   对象.属性名=属性值
+	obj.name = "Tom";
+	obj.gender = "男";
+	obj.age = 18;
+
+	//读取属性   对象.属性名  如果读取没有的属性，不会报错，输出Undefined
+	console.log(obj.gender);
+
+	//修改属性  对象.属性名 = 新的属性值
+	obj.age = 90;
+	console.log(obj.age);
+
+
+	//删除属性  delete 对象.属性名
+	delete obj.name;
+	console.log(obj.name);
+
+    console.log(obj);
+</script>
+</html>

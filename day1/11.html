@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>逻辑运算符</title>
+</head>
+<body>
+
+</body>
+<script>
+	var a = false;
+	//a = 100;    //对非Boolean值进行取反，先变换成Boolean类型，然后取反
+	a = !a;  //取反操作
+	console.log(a);
+	//只要有一个值为false都返回false  短路的与，第一个值为false，不会看第二个值
+	var b= true && true;  //true
+	b = true && false;   //false
+    b = false && false;   //false
+	console.log("b = "+ b);
+	var c= false || false;  //false
+	c = false || true;  //true
+	c = true ||true;   //true或运算，也属于短路，只要第一个就是true，就直接true
+	console.log("c=" + c);   //只要有一个true 就返回true
+</script>
+</html>

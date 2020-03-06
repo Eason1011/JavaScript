@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>一元运算符</title>
+</head>
+<body>
+
+</body>
+<script>
+
+
+
+	var a = 1 + +"2" + 3;   //任何类型前面加+，可以将其转换为number类型，然后进行计算
+	console.log(a);
+	console.log(typeof a);
+	var b = 1;
+	//b++;   //  ++b和b++的效果一样，就是原变量立即加1
+	//不同的是a++和++a得值  a++得值等于原变量的值  ++a是加1的值,新值
+	console.log(b++);
+    console.log(b);
+    var c = 1;
+	console.log(++c);
+	console.log(c);
+	//++a和a++的效果都是加1，但是当放在运算或者输出时，a++表示原数字，++a表示加一的数字
+
+
+</script>
+</html>

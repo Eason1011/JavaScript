@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>嵌套循环</title>
+</head>
+<body>
+
+</body>
+<script>
+	
+	// for (var i = 0;i<10;i++){  //控制高度
+	//     for (var j = 0;j<=i;j++){   //控制长度  j<i+1
+    //         document.write("*");
+	//     }
+	//     document.write("<br />")
+	//
+	// }
+
+
+	for (var i =1; i<=9;i++){   //高度
+	    for (var j =1;j<=i;j++){   //宽度
+	        document.write("<span>"+j + "*" + i + "=" +j*i+"</span>");
+	    }
+	    document.write("<br />");
+	} 
+	
+
+</script>
+<style type="text/css">
+	span{
+		display: inline-block;
+		width: 80px;
+	}
+</style>
+</html>

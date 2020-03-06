@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>if练习</title>
+</head>
+<body>
+
+</body>
+<script>
+	var score = prompt("请输入成绩：");  //用于弹出一个带有文本框的提示框
+	// if (score>100 || score<0 || isNaN(score)){
+	//     var score = prompt("请重新输入合法的成绩：");
+	// }else {
+    //     if (score == 100){
+    //         alert("奖励宝马");
+    //     } else if (score>=80){
+    //         alert("手机");
+    //     } else if (score >= 60){
+    //         alert("书");
+    //     } else {
+    //         alert("啥都没");
+    //     }
+	// }
+	while (score<100 && score>0){
+        if (score == 100){
+            alert("奖励宝马");
+            break;
+        } else if (score>=80){
+            alert("手机");
+            break;
+        } else if (score >= 60){
+            alert("书");
+            break;
+        } else {
+            alert("啥都没");
+            break;
+        }
+	}
+
+	// alert(score);
+	
+</script>
+</html>

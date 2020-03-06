@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>循环练习</title>
+</head>
+<body>
+
+</body>
+<script>
+	// var money = 1000;
+	// var i = 0;//计数器
+	// while (money < 5000){
+	// 	money = money*1.05;
+	// 	i++;
+	// }
+	// console.log("一共需要："+i+"年");
+
+
+	while (true){
+        var score = prompt("请输入成绩：");
+		if (score>=0 && score<=100){
+		    //满足了，退出循环
+			break;
+		}
+		alert("请输入有效的数字！");
+	}
+
+        if (score == 100){
+            alert("奖励宝马");
+        } else if (score>=80){
+            alert("手机");
+        } else if (score >= 60){
+            alert("书");
+        } else {
+            alert("啥都没");
+    }
+
+
+</script>
+</html>

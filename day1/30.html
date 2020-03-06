@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>对象的属性和属性值</title>
+</head>
+<body>
+
+</body>
+<script>
+	var obj = new Object();
+	obj.name = "孙悟空";   //属性名没有特殊要求，但是最好还是驼峰发
+	//[]可以传变量，直接读取变量的值
+	obj["nihao"] = "你好";
+	var n = "nihao";
+	document.write(obj[n]);
+
+
+	//属性值可以使任意数值类型，甚至也可以是一个对象\
+
+
+	var obj2 = new Object();
+	obj2.name = "哈哈";
+	obj.test = obj2;
+	document.write(obj.test.name);
+
+	//in 运算符检查是否含有这一个属性
+	document.write("name" in obj);
+</script>
+</html>

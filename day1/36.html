@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>返回值类型</title>
+</head>
+<body>
+
+</body>
+<script>
+	function f() {
+		alert("开始");
+		for (var i = 0 ;i < 5 ;i++){
+		    if (i==2){
+		        // break;
+			    // continue;
+			    return;   //结束全部函数
+		    }
+		    console.log("i=" + i);
+		}
+		alert("结束");
+    }
+    f();
+</script>
+</html>

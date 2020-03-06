@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>条件运算符</title>
+</head>
+<body>
+
+</body>
+<script>
+	//三元运算符  表达式？语句1：语句2；
+	var a = 500;
+	var b = 20;
+	var c = 100;
+	// a>b?alert("a大"):alert("b大");
+	// var max = a>b?a:b;
+	var max = a > b ? (a > c ? a : c) : (b > c ? b : c); //不推荐使用
+	console.log("max="+max);
+</script>
+</html>

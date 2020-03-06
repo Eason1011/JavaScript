@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>赋值运算符</title>
+</head>
+<body>
+<!--十进制-->
+	<h1 style="font-size: 100px;" >&#9760</h1>
+</body>
+<script>
+	var a = 123;
+	a+=10;
+	console.log("a=" + a);
+	var b = 5 >= 4;
+	console.log("b="+b);
+	//任何值和NaN作比较都是false
+	//如果两边都是字符串，不会转换成数字，会比较字符串的字符编码
+	//一位一位进行比较，剩下多余的不会比较，两位一样会继续比较，可对英文进行比较
+	//比较两个字符串型的数字，一定要转型，不然会结果不可预期
+	console.log("\u2620");
+</script>
+</html>

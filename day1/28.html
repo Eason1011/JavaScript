@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>质数优化</title>
+</head>
+<body>
+
+</body>
+<script>
+	console.time("test");
+	for (var i = 2;i<=100000;i++){
+	    var flag = true;
+	    //对i开平方，开平方后的数字都是重复检查
+	    for (var j = 2;j<=Math.sqrt(i);j++){  //优化二
+	        if(i%j == 0){
+	            //进入表示i不是质数，flag修改为false
+		        flag=false;
+		        break;   //优化一
+	        }
+	    }
+	    if(flag){
+	        document.write(i);
+	        document.write("<br />");
+	    }
+	}
+	console.timeEnd("test");
+</script>
+</html>

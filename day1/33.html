@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>函数简介</title>
+</head>
+<body>
+
+</body>
+<script>
+	//函数中可以分装一些功能，需要时直接调用
+	//创建函数对象,,,,几乎不用
+	var fun = new Function("console.log('哈哈哈')");  //不会立即执行，调用才会执行
+	//调用函数
+	fun();
+	fun();
+    console.log(typeof fun);
+
+
+	//使用函数声明创建,最常用
+	function fun2(){
+	    console.log("哈哈哈哈哈哈");
+	}
+	console.log(fun2);
+	//调用函数
+	fun2();
+
+
+
+	//函数表达式
+	var  fun3 = function () {
+		console.log("哈哈哈哈哈哈哈哈");
+    };
+
+
+</script>
+</html>

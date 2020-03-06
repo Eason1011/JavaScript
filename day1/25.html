@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>质数</title>
+</head>
+<body>
+
+</body>
+<script>
+	var num = prompt("请输入一个大于1的整数：");
+	if(num<=1){
+	    alert("该值不合法：");
+	}else {
+	    var flag = true;
+	    for (var i = 2 ; i<num ; i++){
+	        if (num%i==0){
+	            flag = false;
+	            break;
+	        }
+	    }
+	    
+	    if (flag){
+	        alert("是");
+	    }else {
+	        alert("不是");
+	    }
+	}
+</script>
+</html>

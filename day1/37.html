@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>立即执行函数</title>
+</head>
+<body>
+
+</body>
+<script>
+
+	//函数定义完立即执行，只执行一次
+	(function() {
+		alert("我是匿名函数");
+    })();
+	
+	(function(a,b) {
+		document.write("a="+a);
+		document.write("<br />");
+		document.write("b="+b);
+    })(123,446);
+</script>
+</html>
