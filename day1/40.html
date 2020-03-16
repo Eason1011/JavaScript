@@ -10,6 +10,17 @@
 <script>
 	//两种作用域
 	//全局作用域，直接编写在script中的变量，都是全局，在页面打开是创建，关闭是销毁
-	58
+	//在全局作用域中有一个全局对象Window，代表浏览器窗口，由浏览器创建
+	console.log(window);   //Window创建的对象都会作为window对象的属性保存
+	var a = 123;
+	console.log(window.a);
+	var b = 456;
+	console.log(window.b);
+	function fun() {
+		console.log("我是一个函数");
+    }
+    window.fun();         //Window创建的函数都会作为window对象的方法保存
+
+	//函数作用域，
 </script>
 </html>
