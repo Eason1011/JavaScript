@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>使用工厂方法创建对象</title>
+</head>
+<body>
+
+</body>
+<script>
+	function creatobj(name , age , gender) {
+	    //创建一个新对象
+		var obj  = new Object();
+		//向对象中添加属性
+		obj.name = name;
+		obj.age = age;
+		obj.gender = gender;
+		obj.sayName = function () {
+			alert(this.name);
+        };
+		return obj;
+    }
+
+
+
+    var obj1 =  creatobj("哈哈",14,"男");
+    var obj2 =  creatobj("拉拉",24,"女");
+    var obj3 =  creatobj("呵呵",34,"男");
+
+    console.log(obj1);
+    console.log(obj2);
+    console.log(obj3);  //64
+
+    obj1.sayName();
+    obj2.sayName();
+    obj3.sayName();
+
+
+
+</script>
+</html>

@@ -10,8 +10,42 @@
 <script>
 	//函数作用域,调用时创建，执行完销毁
 	//每调用一次，就创建一次
-	function fun() {  59 03
 
+	var a = 10;
+	function fun() {
+		var a = "函数中的a"   //就近原则,先找自己的,再往上一级作用域找（套娃）
+	    var b = 20;    //在函数中找全局的，使用window
+		console.log(a);    //函数中可以访问全局变量
     }
+
+    fun();
+	//console.log(b);   //全局中不能访问函数作用域
+	console.log(a);    //只能找全局的
+
+
+	function fun2() {
+		console.log(a);   //也有变量提前申明的特点，函数声明也会提前
+		var a = 10;
+    }
+    fun2();
+
+
+	var c = 33;
+	//在函数中不适用var的变量，都是全局变量
+	function fun3() {
+		console.log(c);
+		//var c = 10;   //undefined
+		c = 10;    //33
+    }
+    fun3();
+
+
+
+	var e = 10;
+	//定义形参相当于在函数作用域中声明了变量
+	function fun4(e) {
+		alert(e);
+    }
+    fun4();
 </script>
 </html>

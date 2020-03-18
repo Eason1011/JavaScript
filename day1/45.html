@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>this补充</title>
+</head>
+<body>
+
+</body>
+<script>
+	//定义一个全局变量
+	var name = "全局";
+
+	//定义一个fun函数
+	function fun() {
+		console.log(this.name);
+    }
+
+    //定义两个对象
+	var obj = {
+	    name:"哈哈",
+		sayName:fun,
+	}
+    var obj2 = {
+        name:"拉拉",
+        sayName:fun,
+    }
+
+    //要全局
+	fun();
+
+	//要obj的name,,如果不加this，那么访问的永远是全局name
+	obj.sayName();
+
+    //要obj2的name
+    obj2.sayName();
+</script>
+</html>
